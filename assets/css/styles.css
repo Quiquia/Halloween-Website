@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Butcherman&family=Dancing+Script:wght@600&family=Lora:wght@500;600&family=Poppins:wght@400;500;600;700&family=Roboto&display=swap");
+
+
+@import "./reusableClasse.css";
+@import "./headerNav.css";
+@import "./home.css";
+@import "./category.css";
+@import "./about.css";
+@import "./items.css";
+@import "./party.css";
+@import "./footer.css";
+@import "./scrollBar.css";
+@import "./scrollUp.css";
+@import "./breakPoints.css";
+
+
+
+:root {
+  --header-height: 3.5rem;
+
+  --first-color: hsl(22, 72%, 50%);
+  --first-color-alt: hsl(22, 72%, 46%);
+  --white-color: #fff;
+  --text-color: hsl(22, 4%, 75%);
+  --text-color-light: hsl(22, 4%, 55%);
+  --body-color: hsl(22, 8%, 6%);
+  --container-color: hsl(22, 8%, 7%);
+  --title-color: hsl(19, 16%, 15%);
+
+  --body-font: "Poppins", sans-serif;
+  --second-font: "Butcherman", cursive;
+
+  --biggest-font-size: 2rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+ 
+
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold:700
+
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+
+@media screen and (min-width: 1024px) {
+  :root {
+    --biggest-font-size: 3.5rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+  }
+}
+
+
+*{
+    box-sizing:border-box ;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--white-color);
+   
+}
+
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}

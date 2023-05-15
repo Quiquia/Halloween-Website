@@ -1,0 +1,159 @@
+.shape-bg {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  mix-blend-mode: soft-light;
+  opacity: 0.5;
+}
+
+.shape-small,
+.shape-big {
+  position: absolute;
+  background-color: var(--first-color);
+  border-radius: 50%;
+  filter: blur(96px);
+  z-index: -1;
+}
+
+.shape-small {
+  width: 150px;
+  height: 150px;
+}
+
+.shape-big {
+  width: 250px;
+  height: 250px;
+  opacity: 0.8;
+}
+
+.home {
+  position: relative;
+}
+
+.home-container {
+  padding-top: 3.5rem;
+}
+
+.home-data {
+  text-align: center;
+}
+
+.home-title {
+  position: relative;
+  font-size: var(--biggest-font-size);
+  line-height: 140%;
+  width: max-content;
+  margin: 0 auto 0.5rem;
+}
+
+.home-title-img-1,
+.home-title-img-2 {
+  width: 40px;
+  position: absolute;
+}
+
+.home-title span {
+  display: block;
+  font-family: var(--second-font);
+  font-weight: initial;
+  color: var(--first-color);
+}
+
+.home-title-img-1 {
+  top: -1rem;
+  left: -1.5rem;
+  transform: rotate(-15deg);
+  animation: animate-start-1 5s infinite ease-in-out;
+}
+
+.home-title-img-2 {
+  right: -1.5rem;
+  bottom: 2.75rem;
+  transform: rotate(15deg);
+  animation: animate-start-2 5s infinite ease-in-out;
+}
+
+.home-description {
+  margin-bottom: 2.5rem;
+}
+
+.home-img {
+  width: 300px;
+  justify-content: center;
+  margin: auto;
+}
+
+.home-tree-1,
+.home-tree-2 {
+  width: 120px;
+  position: absolute;
+  top: 18rem;
+}
+
+.home-tree-1 {
+  left: -2rem;
+}
+
+.home-tree-2 {
+  right: -2rem;
+}
+
+/*----------animate start ------*/
+
+@keyframes animate-start-1 {
+  0% {
+    transform: scale(0.7) rotate(-15deg);
+    opacity: 0.2;
+  }
+  50% {
+    transform: scale(1) rotate(-15deg);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.7) rotate(-15deg);
+    opacity: 0.2;
+  }
+}
+
+@keyframes animate-start-2 {
+  0% {
+    transform: scale(1) rotate(15deg);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0.7) rotate(15deg);
+    opacity: 0.2;
+  }
+  100% {
+    transform: scale(1) rotate(15deg);
+    opacity: 1;
+  }
+}
+
+.home .shape-small {
+  top: -3rem;
+  left: -3rem;
+}
+
+.home .shape-big {
+  bottom: 5rem;
+  right: -10rem;
+}
+
+/*----------button ------*/
+
+.button {
+  display: inline-block;
+  background-color: var(--white-color);
+  padding: 1rem 1.5rem;
+  border-radius: 4rem;
+  color: var(--first-color);
+  font-weight: var(--font-semi-bold);
+  transition: background 0.3s, color 0.3s;
+}
+
+.button:hover {
+  background-color: var(--first-color);
+  color: var(--white-color);
+}

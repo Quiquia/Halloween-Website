@@ -1,0 +1,46 @@
+.party {
+  position: relative;
+}
+
+.party-container {
+  row-gap: 5rem;
+}
+
+.party-container .section-title {
+  margin-bottom: 1rem;
+}
+
+.party-data {
+  text-align: center;
+}
+
+.party-description {
+  margin-bottom: 2rem;
+}
+
+.party-images {
+  position: relative;
+  justify-self: center;
+}
+
+.party-img {
+  width: 250px;
+}
+
+.party-img-1,
+.party-img-2 {
+  position: absolute;
+  width: 50px;
+  transform: rotate(15deg);
+}
+
+.party-img-1 {
+  top: -3rem;
+  left: -0.5rem;
+  animation: animate-start-1 5s infinite ease-in-out;
+}
+.party-img-2 {
+  right: -1.5rem;
+  bottom: 2rem;
+  animation: animate-start-2 5s infinite ease-in-out;
+}

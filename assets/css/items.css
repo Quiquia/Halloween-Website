@@ -1,0 +1,70 @@
+.items {
+  position: relative;
+}
+
+.items-container {
+  padding-top: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  gap: 4rem 1.5rem;
+}
+
+.items-card {
+  position: relative;
+  background-color: var(--container-color);
+  border-radius: 1.5rem;
+  padding: 4rem 1.25rem 1.25rem;
+  box-shadow: 0 4px 16px hsla(22, 10%, 2%, 0.3);
+  text-align: center;
+}
+
+.items-img {
+  width: 100px;
+  position: absolute;
+  inset: 0;
+  top: -2rem;
+  margin: 0 auto;
+  transition: transform 0.3s;
+}
+
+.items-name {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  margin-bottom: 0.25rem;
+}
+
+.items-price {
+  display: block;
+  color: var(--first-color);
+  font-weight: var(--font-semi-bold);
+  margin-bottom: 0.5rem;
+}
+
+.items-button {
+  display: inline-block;
+  background-color: var(--first-color);
+  border: none;
+  border-radius: 4rem;
+  padding: 0.25rem 1.5rem;
+  color: var(--white-color);
+  cursor: pointer;
+  outline: none;
+  transition: background 0.3s;
+}
+
+.items-button i {
+  font-size: 1.25rem;
+}
+
+.items-button:hover {
+  background-color: var(--first-color-alt);
+}
+
+.items-card:hover .items-img {
+  transform: translateY(-0.5rem);
+}
+
+.items .shape-big {
+  right: -8rem;
+  bottom: 8rem;
+}
